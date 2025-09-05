@@ -2,19 +2,19 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven_3.9.11'  // Name must match your Maven tool in Jenkins (set in Global Tool Configuration)
+        maven 'Maven_3.9.11'  // or your configured Maven version
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/2317024-code/Jenkins-Demo-By-Abijin.git'
+                git branch: 'main', url: 'https://github.com/2317024-code/Jenkins-Demo-By-Abijin.git'
             }
         }
 
         stage('Build with Maven') {
             steps {
-                bat 'mvn clean install'  // Use 'bat' instead of 'sh' if on Windows
+                bat 'mvn clean install'  // use 'sh' if you're on Linux/Mac
             }
         }
     }
