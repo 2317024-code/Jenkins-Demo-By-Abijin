@@ -14,7 +14,7 @@ pipeline {
 
         stage('Build with Maven') {
             steps {
-                bat 'mvn clean install'  // use 'sh' if you're on Linux/Mac
+                bat 'mvn clean install'
             }
         }
     }
