@@ -1,0 +1,192 @@
+﻿1.import java.util.*;
+class Todo {
+    public static void main(String[] args) {
+        ArrayList<String> tasks = new ArrayList<>();
+        Scanner sc = new Scanner(System.in);
+        while (true) {
+            System.out.println("1.Add 2.View 3.Delete 4.Exit");
+            int ch = sc.nextInt(); sc.nextLine();
+            if (ch == 1) tasks.add(sc.nextLine());
+            else if (ch == 2) System.out.println(tasks);
+            else if (ch == 3) tasks.remove(sc.nextLine());
+            else break;
+        }
+    }
+}
+
+
+
+
+2.def add(a,b): return a+b
+def sub(a,b): return a-b
+def mul(a,b): return a*b
+def div(a,b): return a/b if b!=0 else "Infinity"
+
+
+x,y=map(int,input("Enter 2 numbers: ").split())
+print("Add:",add(x,y),"Sub:",sub(x,y),"Mul:",mul(x,y),"Div:",div(x,y))
+
+
+3.import java.util.*;
+class Quiz {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int score=0;
+        System.out.println("Q1: 2+2=? 1)3 2)4");
+        if(sc.nextInt()==2) score++;
+        System.out.println("Q2: Java is OOP? 1)Yes 2)No");
+        if(sc.nextInt()==1) score++;
+        System.out.println("Score: "+score);
+    }
+}
+
+
+4.notes=[]
+while True:
+    ch=int(input("1.Add 2.View 3.Exit: "))
+    if ch==1: notes.append(input("Note: "))
+    elif ch==2: print(notes)
+    else: break
+5.import java.util.*;
+class Temp {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        double c=sc.nextDouble();
+        System.out.println("Fahrenheit: "+((c*9/5)+32));
+    }
+}
+
+
+6.expenses=[]
+while True:
+    ch=int(input("1.Add 2.View 3.Exit: "))
+    if ch==1: expenses.append(float(input("Enter amount: ")))
+    elif ch==2: print("Expenses:",expenses,"Total:",sum(expenses))
+    else: break
+
+
+7.import java.util.*;
+class ContactBook {
+    public static void main(String[] args) {
+        HashMap<String,String> book=new HashMap<>();
+        Scanner sc=new Scanner(System.in);
+        while(true){
+            System.out.println("1.Add 2.Search 3.Exit");
+            int ch=sc.nextInt(); sc.nextLine();
+            if(ch==1){ book.put(sc.nextLine(), sc.nextLine()); }
+            else if(ch==2){ System.out.println(book.get(sc.nextLine())); }
+            else break;
+        }
+    }
+}
+
+
+8.w=float(input("Weight(kg): "))
+h=float(input("Height(m): "))
+bmi=w/(h*h)
+print("BMI:",round(bmi,2))
+
+
+9.class News {
+    public static void main(String[] args) {
+        System.out.println("News Feed:\n1. Java 21 Released!\n2. AI Trends Rising.");
+    }
+}
+
+
+10.dictionary={"AI":"Artificial Intelligence","ML":"Machine Learning"}
+word=input("Word: ")
+print("Meaning:",dictionary.get(word,"Not Found"))
+
+
+
+
+11.import java.util.*;
+class Currency {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        double usd=sc.nextDouble();
+        System.out.println("INR: "+usd*83);
+    }
+}
+
+
+12.recipes={"Pasta":"Boil pasta, add sauce","Tea":"Boil water, add tea leaves"}
+print(recipes.get(input("Enter recipe: "),"Not Found"))
+
+
+13.class BookFinder {
+    public static void main(String[] args) {
+        System.out.println("Books:\n1. Java Basics\n2. Python 101");
+    }
+}
+
+
+
+
+14.u=input("Username: ")
+p=input("Password: ")
+if len(u)>3 and len(p)>=6:
+    print("Valid Form")
+else:
+    print("Invalid Form")
+
+
+15.class Theme {
+    public static void main(String[] args) {
+        boolean dark=false;
+        dark=!dark;
+        System.out.println("Theme: "+(dark?"Dark":"Light"));
+    }
+}
+
+
+
+
+16.count=0
+while True:
+    ch=int(input("1.Inc 2.Dec 3.Exit: "))
+    if ch==1: count+=1
+    elif ch==2: count-=1
+    else: break
+    print("Count:",count)
+
+
+
+
+17.import java.util.*;
+class Age {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int birth=sc.nextInt();
+        System.out.println("Age:"+(2025-birth));
+    }
+}
+
+
+
+
+18.import calendar
+y,m=map(int,input("Enter year month: ").split())
+print(calendar.month(y,m))
+
+
+
+
+19.import java.util.*;
+class Discount {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        double price=sc.nextDouble();
+        double dis=sc.nextDouble();
+        System.out.println("Final Price:"+(price-(price*dis/100)));
+    }
+}
+
+
+
+
+20.cart=[]
+cart.append("Laptop")
+print("Cart:",cart)
+print("Jenkins: Deployment Alert Sent!")
